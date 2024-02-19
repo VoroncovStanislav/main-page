@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Эксклюзивные предложения для инвестирования в недвижимость Краснодарского края">
+    <meta name="keywords" content="Недвижимость, Краснодарский край, Инвестиции, Новостройки, Инвестирование в недвижимость, Недвижимость в Краснодарском крае, Коммерческая недвижимость, Апартаменты с управлением, Готовый арендный бизнес">
+    <meta name="robots" content="all">
+    <meta name="author" content="Stanislav Voroncov">
+    <meta name="Copyright" content="Stanislav Voroncov">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Инвеcтиции в недвижимость">
+    <meta property="og:description" content="Эксклюзивные предложения для инвестирования в недвижимость Краснодарского края">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://invest-n.pro/">
+    <meta property="og:site_name" content="Инвеcтиции в недвижимость">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="Stanislav">
+    <meta name="twitter:title" content="Инвеcтиции в недвижимость">
+    <meta name="twitter:description" content="Эксклюзивные предложения для инвестирования в недвижимость Краснодарского края">
+    <meta name="twitter:image" content="">
+    <link rel="icon" href="https://invest-n.pro/favicon.ico" type="image/x-icon">
+    <title>Инвестиции в недвижимость</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="myAnimations.css">
+    <link rel="stylesheet" href="forma.css">
+    <link rel="stylesheet" href="adaptive.css">
+</head>
+<body>
+    <div class="overlay" data-close=""></div>
+    <div id="modal_1" class="dlg-modal dlg-modal-fade">
+        <div class="container">
+            <span class="closer" data-close=""><img src="cross.svg" alt="Крестик"></span>
+            <h2>ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ ОТ НАШЕГО СПЕЦИАЛИСТА</h2>
+            <form class= "contact_form" action="sendform.php" method="post" name="contact_form">
+                <div class="form_inputs">
+                    <input class="firstInput" type="text" name="name" required placeholder="Ваше имя">
+                    <input class="secondInput" type="text" name="phone" required placeholder="Ваш телефон/Email">
+                    <textarea class="komm" name="question" cols="40" rows="6" placeholder="Комментарий"></textarea>
+                </div>
+                <p><input type="checkbox" name="a" checked value="1417" class="item"> Я согласен(-а) с политикой конфиденциальности</p>
+                <input type="submit" value="ОТПРАВИТЬ">
+            </form>    
+        </div>	
+	</div>
+    <div class="overlay" data-close=""></div>
+	<!-- <div id="modal_2" class="dlg-modal dlg-modal-fade">
+		<span class="closer" data-close=""><img src="cross.svg" alt="Крестик"></span>
+		<h2>Укажите ваш телефон/Whatsapp</h2>
+        <h2>Для получения подборки</h2>
+		<form class= "contact_form" action="sendform.php" method="post" name="contact_form">
+			<div class="form_inputs">
+			    <input type="text" name="name" required placeholder="Ваше имя">
+				<input class="secondInput" type="text" name="phone" required placeholder="Ваш телефон">
+				<textarea name="question" cols="40" rows="6" placeholder="Комментарий"></textarea>
+			</div>
+			<p><input type="checkbox" name="a" checked value="1417" class="item"> Я согласен(-а) с политикой конфиденциальности</p>
+			<input type="submit" value="Отправить">
+		</form>
+	</div> -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div id="myTopnav" class="navbar__wrap">
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <a class="logo" href="#main"></a>
+                    <!-- <div class="logo">
+                        <a href="#main"><img  class="logotip" src="logo-1.svg" alt=""></a>
+                    </div> -->
+                    <ul class="menu" id="menu">
+                        <li><a href="#advantages">Преимущества</a></li>
+                        <li><a href="#investors">Инвесторам</a></li>
+                        <li><a href="#about_us">Наши услуги</a></li>
+                        <li><a href="#partners">Партнеры</a></li>
+                        <li><a href="#FAQ">Вопрос-ответ</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="#">Разное&nbsp;</a>
+                            <ul id="drop-down" class="dropdown-content">
+                                <li><a class="dropdown-item1" href="blog.html">Новости</a></li>
+                                <li><a class="dropdown-item2" href="calculator.html">Калькулятор</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="telefon">8-999-425-03-44</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="popup" id="popup"></div>
+    <main>
+        <div class="wapp1">
+            <a href="https://wa.clck.bar/79994250344" class="pulse-button" target="_blank"></a>
+        </div>
+        <section class="main" id="main">
+            <div class="container">
+                <div class="title_container">
+                    <h1>Инвестируйте в <br>недвижимость<br> Краснодарского края</h1>
+                    <h2>Только ликвидные активы<br>с высокой доходностью</h2>
+                    <button type="button" class="btn btn-default" data-modal="modal_1" accesskey="p">ПОЛУЧИТЬ ПОДБОРКУ</button>
+                </div>
+                <div class="services">
+                    <div class="services_item">
+                        <div class="services_item_1">
+                            <img src="services-1.svg" alt="Иконка недвижимость">
+                            <h3>ОБЪЕКТЫ</h3>
+                            <p>Работаем только с проверенными и ликвидными объектами</p>  
+                        </div>
+                        <div class="services_item_2">
+                            <img src="services-2.svg" alt="Иконка блокнот с ручкой">
+                            <h3>СОПРОВОЖДЕНИЕ</h3>
+                            <p>Проверка документов и полное сопровождение сделки</p>
+                        </div>
+                        <div class="services_item_3">
+                            <img src="services-3.svg" alt="Иконка сертификат">
+                            <h3>ЛУЧШИЕ УСЛОВИЯ</h3>
+                            <p>Согласовываем индивидуальные условия для вас</p>
+                        </div>
+                        <div class="services_item_4">
+                            <img src="services-4.svg" alt="Иконка телефон">
+                            <h3>ДИСТАНЦИОННАЯ СДЕЛКА</h3>
+                            <p>Онлайн подбор объектов, электронная регистрация сделки</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="NaN">
+                    <p>ㅤ</p>
+                </div>
+            </div>
+        </section>
+        <section class="advantages" id="advantages">
+            <div class="container">
+                <div class="advantages_title">
+                    <h2>ПРЕИМУЩЕСТВА НЕДВИЖИМОСТИ В КРАСНОДАРСКОМ КРАЕ</h2>
+                </div>
+                <div class="advantages_items">
+                    <div class="advantages_items_block">
+                        <div class="advantages_item">
+                            <img src="1.svg" alt="Иконка лупа">
+                            <p>Госсударственная поддержка экономики региона</p>  
+                        </div>
+                        <div class="advantages_item">
+                            <img src="2.svg" alt="Иконка картина">
+                            <p>Благоприятный климат для выгодных инвестиций</p>
+                        </div>
+                        <div class="advantages_item">
+                            <img src="3.svg" alt="Иконка отчет">
+                            <p>Развитие санаторно-курортного туристического бизнеса</p>
+                        </div>
+                        <div class="advantages_item">
+                            <img src="4.svg" alt="Иконка график роста">
+                            <p>Рост городов и создание современной инфраструктуры</p>  
+                        </div>
+                        <div class="advantages_item">
+                            <img src="5.svg" alt="Иконка весы">
+                            <p>Разнообразие предложений на рынке недвижимости</p>
+                        </div>
+                        <div class="advantages_item">
+                            <img src="6.svg" alt="Иконка пьедестал">
+                            <p>Высокий уровень доходности на растущем рынке</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        
+        <!-- <section class="forma_whatsapp">
+            <div class="container">
+                <div class="forma_whatsapp_block">
+                    <h2>Получите подборку лучших предложений на Whatsapp!</h2>
+                    <a href="https://wa.me/79994250344" target="_blank"><img src="Frame.svg" alt=""></a>
+                    <button type="button" class="btn btn-default" data-modal="modal_2" accesskey="w">Whatsapp</button>
+                </div> 
+            </div>
+        </section> -->
+        <section class="investors" id="investors">
+            <div class="container">
+                <div class="investors_title">
+                    <h2>НАПРАВЛЕНИЯ ИНВЕСТИРОВАНИЯ</h2>
+                </div>
+                <div class="investors_sp">
+                    <div class="investors_spisok">
+                        <ul class="list3a">
+                            <li>Новостройки<br><span class="li_text">квартиры премиум и бизнес класса</span></li>
+                            <li>Курортная недвижимость<br><span class="li_text">резиденции, отели, апарт-комплексы с управлением</span></li>
+                            <li>Коммерческая недвижимость<br><span class="li_text">магазины, офисы, склады, земельные участки</span></li>
+                            <li>Готовый арендный бизнес<br><span class="li_text">объект, который сдан в аренду и приносит стабильный доход</span></li>
+                        </ul>
+                        
+                        <div class="img_group">
+                            <div class="first">
+                                <img src="novorossiisk.png" alt="" class="first_img">  
+                            </div>
+                            <div class="second">
+                                <img src="krasnodar.png" alt="" class="second_img">
+                            </div>
+                            <div class="third">
+                                <img src="sochi.png" alt="" class="third_img">
+                            </div> 
+                            <div class="four">
+                                <img src="anapa.png" alt="" class="four_img">
+                            </div>      
+                        </div>
+                    </div>
+                    <!-- <img src="investors_img_test (1).webp" alt="Возможности заработка на инвестициях в недвижимость"> -->
+                </div>
+            </div>
+        </section>
+        <section class="about_us" id="about_us">
+            <div class="container">
+                <div class="advantages_title">
+                    <h2>НАШИ УСЛУГИ</h2>
+                </div>
+                <div class="advantages_items">
+                    <div class="advantages_items_block" id="block_about_us">
+                        <div class="advantages_item">
+                            <img src="konsalting.png" alt="Иконка акция">    
+                            <h3>Полный спектр услуг:</h3>
+                            <p class="about_us_text">Консалтинг, операции с недвижимостью, поcпродажное обслуживание и управление объектом</p> 
+                        </div>
+                        <div class="advantages_item">
+                            <img src="strategii.png" alt="Иконка портфель денег" class="old">
+                            <h3>Инвестиционные программы:</h3>
+                            <p class="about_us_text">Предложим наиболее эффективные инвестиционные программы под ваш бюджет, цели и задачи</p>
+                        </div>
+                        <div class="advantages_item">
+                            <img src="onlainsdelka.png" alt="Иконка договор" class="old">
+                            <h3>Онлайн-сделки:</h3>
+                            <p class="about_us_text">Проведём все от показа до регистрации сделки онлайн, покупка объекта из вашего города</p>
+                        </div>
+                        <div class="advantages_item">
+                            <img src="rezidenti.png" alt="Иконка глобус" class="old">
+                            <h3>Мы работаем с нерезидентами:</h3>
+                            <p class="about_us_text">Осуществляем помощь гражданам дружественных стран приобрести объект быстро и без бюрократических проволочек</p>  
+                        </div>
+                        <div class="advantages_item">
+                            <img src="novostroiki.png" alt="Иконка топ" class="old">
+                            <h3>Застройщиĸи:</h3>
+                            <p class="about_us_text">Мы тщательно выбираем компании высокого уровня, с максимальной надежностью и безупречной репутацией на рынке</p>
+                        </div>
+                        <div class="advantages_item">
+                            <img src="yoursoprovosjdenie.png" alt="Иконка калькулятор" class="old">
+                            <h3>Юридическое сопровождение сделки:</h3>
+                            <p class="about_us_text">Обеспечиваем полное юридическое сопровождение сделки на всех её этапах и помогаем нашим клиентам сэкономить деньги</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        
+        <section class="Ipoteka" id="partners">
+            <div class="container">
+                <div class="Ipoteka_title">
+                    <h2>НАШИ ПАРТНЕРЫ ПО ИПОТЕКЕ</h2>
+                </div>
+                <div class="banki">
+                    <h3>Мы являемся партнерами всех крупнейших банков, предлагающих ипотечное кредитование в регионе.</h3>
+                    <h3>Знаем где и как получить лучшие условия по ипотеке</h3>
+                </div>
+                <div class="discount_item__1">
+                    <div class="discount_item">
+                        <img src="checkbox.svg" alt="Иконка галочка">
+                        <p>Ипотечные программы с гос.поддержкой от Государства</p>  
+                    </div>
+                    <div class="discount_item">
+                        <img src="checkbox.svg" alt="Иконка галочка">
+                        <p>Возможность согласования индивидуальных условий рассрочки</p>
+                    </div>
+                    <div class="discount_item">
+                        <img src="checkbox.svg" alt="Иконка галочка">
+                        <p>Субсидированные программы по сниженным ставкам от застройщика</p>
+                    </div>
+                </div>
+                <div class="zayavka">
+                    <div class="zayavka_title">
+                        <h3 class="ip">РАССЧИТАЕМ ИПОТЕКУ И ПРОКОНСУЛЬТИРУЕМ</h3>
+                    </div>
+                    <form class= "contact_form" action="sendform.php" method="post" name="contact_form">
+                        <div class="form_inputs">
+                            <input type="text" name="name" required placeholder="Ваше имя">
+                            <input class="secondInput"  type="tel" name="phone" required placeholder="Ваш телефон">
+                        </div>
+                        <input type="submit" value="ОТПРАВИТЬ">
+                    </form>
+                </div>
+                <div class="rabota">
+                    <div class="route_title" id="partners">
+                        <h3>КАК МЫ РАБОТАЕМ</h3>
+                    </div>
+                    <div class="route_items">
+                        <div class="route_item">
+                            <h4>1</h4>
+                            <h5>Вы оставляете заявку на нашем сайте</h5>
+                        </div>
+                        <div class="route_item">
+                            <h4>2</h4>
+                            <h5>С вами свяжется наш эксперт по недвижимости</h5>
+                        </div>
+                        <div class="route_item">
+                            <h4>3</h4>
+                            <h5>Он бесплатно поможет вам подобрать объект</h5>
+                        </div>
+                        <div class="route_item">
+                            <h4>4</h4>
+                            <h5>При необходимости поможет бесплатно открыть ипотеку</h5>
+                        </div>
+                        <div class="route_item">
+                            <h4>5</h4>
+                            <h5>Поможем согласовать, подготовить и провести сделку</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="NaN">
+                    <p>ㅤ</p>
+                </div>
+            </div>
+        </section>
+        <section class="objects">
+            <div class="container">
+                <div id="galleryView">
+                    <div id="galleryContainer">
+                        <div id="leftView"></div>
+                        <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+                        <a id="linkTag">
+                            <div id="mainView"><img src="" alt="" id="mainView_img"></div>
+                        </a>
+                        <div id="rightView"></div>
+                        <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="faq" id="FAQ">
+            <div class="container">
+                <div class="faq_title">
+                    <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+                </div>
+                <div class="accordions">
+                    <div class="accordion-item">
+                        <div class="accordion-title" data-tab="item1">
+                          <h3>Где лучше купить недвижимость?<i class="fa fa-chevron-down">+</i></h3>
+                        </div>
+                        <div class="accordion-content" id="item1">
+                          <p>
+                            Выбор инвестиционной программы напрямую зависит от ваших целей.
+                          </p>
+                          <ol>
+                            <li>Если вам интересна застройка с последующей перепродажей, то мы можем предложить вам объекты в различных городах и районах.</li>
+                            <li>Если же ваша цель - сдача недвижимости в аренду посуточно, то рекомендуем обратить внимание на объекты, расположенные ближе к морскому побережью.</li>
+                            <li>В случае долгосрочной аренды мы также предлагаем варианты в городе.</li>
+                          </ol>
+                          <p>Мы придаем большое значение индивидуальному подходу к каждому инвестору и всегда готовы помочь вам выбрать объект, который будет соответствовать вашим пожеланиям и целям.</p>
+                          
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-title" data-tab="item2">
+                          <h3>Какие льготные ставки предусмотрены в 2024 году в рамках ипотеки?<i class="fa fa-chevron-down">+</i></h3>
+                        </div>
+                        <div class="accordion-content" id="item2">
+                          <p>
+                            На данный момент доступны три основные льготные ставки по ипотечным программам в этом году.
+                          </p>
+                          <ol>
+                            <li>IT-ипотека для сотрудников аккредитованных IT-компаний, где процентная ставка ограничена пятью процентами.</li>
+                            <li>Для семей, в которых первенцы или последующие дети родились с 2018 по 2023 год, а также для семей, имеющих ребенка с инвалидностью, предлагается семейная программа с процентной ставкой в размере шести процентов.</li>
+                            <li>Также на рынке существует государственная программа поддержки, где процентная ставка может достигать восьми процентов. В данном случае нет специфических требований к заемщикам, только стандартные банковские требования. Однако существуют требования к недвижимости: она должна представлять собой готовое или строящееся жилье от застройщика, а также дом или строительство дома от юридического лица или индивидуального предпринимателя.</li>
+                          </ol>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-title" data-tab="item3">
+                          <h3>Возможно ли провести сделку дистанционно?<i class="fa fa-chevron-down">+</i></h3>
+                        </div>
+                        <div class="accordion-content" id="item3">
+                          <p>
+                            Выбирая объект недвижимости дистанционно, эксперт, при необходимости, предложит провести онлайн консультацию и видио презентацию объекта. Предоставит всю необходимую информацию и согласует со сторонами условия проведения сделки.
+                          </p>
+                          <p>
+                            Приобрести выбранный объект недвижимости можно дистанционно из своего города используя сервис электронной регистрации. При этом сделки могут быть за наличный расчет, в ипотеку, а также требующие нотариального удостоверения. Такие сделки абсолютно прозрачны и безопасны т.к. используется сервис безопасных расчетов (СБР). Процесс  регистрации  как правило проходит гораздо быстрее, от одного рабочего дня. При этом стороны экономят время, которое могли бы потратить на визит к застройщику, банк, органы Росреестра для сдачи и получения документов, организации взаиморасчётов, а это до десяти рабочих дней.
+                          </p>
+                          <p>
+                            Процесс приобретения объекта недвижимости дистанционно возможно организовать с минимальным отрывом сторон от привычных повседневных дел.
+                          </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-title" data-tab="item4">
+                          <h3>Сколько реально заработать на инвестициях в недвижимость?<i class="fa fa-chevron-down">+</i></h3>
+                        </div>
+                        <div class="accordion-content" id="item4">
+                          <p>
+                            Мы можем предложить вам столько возможностей, сколько вы пожелаете. Сознательное использование тактики ожидания, хорошо продуманной и аналитической стратегии, позволит вам добиться желаемой прибыли на вашем инвестиционном портфеле. И если мы говорим в цифрах, то множество успешных кейсов наших клиентов свидетельствуют о том, что возможно получить не менее, чем 30% чистой прибыли в год.
+                          </p>
+                          <p>
+                            При этом хотелось бы отметить, что не обязательно иметь изначальный капитал, чтобы стать нашим инвестором. Применение ипотеки как инструмента для инвестирования также демонстрирует впечатляющие результаты.
+                          </p>
+                          <p>
+                            Наш опыт и экспертиза помогут вам достичь ваших финансовых целей и обеспечить успех вашего портфеля инвестиций.
+                          </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-title" data-tab="item5">
+                          <h3>Как выбирать объект для инвестиций?<i class="fa fa-chevron-down">+</i></h3>
+                        </div>
+                        <div class="accordion-content" id="item5">
+                          <p>
+                            При рассмотрении вопроса о цене и выборе объекта для инвестиций, следует учитывать ряд основных параметров, которые оказывают влияние на итоговую стоимость. Проанализировав эти факторы, можно принять максимально обоснованное решение в отношении инвестиций.
+                          </p>
+                          <ol>
+                            <li>В первую очередь, важно учесть рыночные тенденции и потребности. Так, спрос и предложение на конкретный тип объектов может оказывать заметное влияние на их цену. Необходимо оценить, насколько востребован данный вид недвижимости или инвестиционного объекта, а также прогнозировать его перспективы в ближайшем будущем.</li>
+                            <li>Следующим важным фактором является географическое расположение объекта. Популярные и престижные районы, наличие развитой инфраструктуры и удобный доступ к городским центрам могут значительно повысить стоимость и привлекательность недвижимости или других объектов для инвестиций.</li>
+                            <li>Также необходимо учитывать состояние объекта и его потенциал для развития. Оценка технического состояния и возможных доработок или модернизации может повлиять на цену в сторону увеличения или уменьшения. Кроме того, степень риска, связанного с инвестицией, также может сказаться на цене объекта.</li>
+                            <li>Наконец, важно учитывать влияние макроэкономических факторов. Экономическая и политическая стабильность, инфляция, процентные ставки и другие макроэкономические показатели могут оказывать значительное влияние на инвестиционные объекты, и, как следствие, на их цены.</li>
+                          </ol>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-title" data-tab="item6">
+                          <h3>Как я могу быть уверен в безопасности сделки?<i class="fa fa-chevron-down">+</i></h3>
+                        </div>
+                        <div class="accordion-content" id="item6">
+                          <p>
+                            Все объекты, которые мы предлагаем нашим клиентам проходят тщательную юридическую проверку документов. Мы так проверяем недвижимость на предмет запретов, арестов, залогов, банкротства других ограничений, которые  препятствуют регистрации права. 
+                          </p>
+                          <p>
+                            Мы сотрудничаем только с проверенными и надёжными застройщиками, проверяем документацию по каждому проекту на соответствие действующему законодательству.
+                            Изучаем каждый договор аренды до его заключения сторонами. Обеспечиваем юридическое сопровождение на всех этапах, что позволяет нам безопасно совершать сделки, а нашим клиентам спокойно спать. 
+
+                          </p>
+                          <p>
+                            При расчётах между продавцом и покупателем  всегда используем сервисы безопасных расчётов  (СБР) — банковская ячейка или аккредитив банков партнёров для того, чтобы обе стороны были уверены в сохранности денежных средств и законных интересов в процессе регистрации права.
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="forma_whatsapp">
+            <div class="container">
+                <div class="forma_whatsapp_block">
+                    <h2>Выбираете объект для проживания, инвестиций или вашего бизнеса?</h2>
+                    <h3>Мы поможем!</h3>
+                    <a href="https://krasnodar.cian.ru/agents/61182122/" target="_blank"><button type="button" class="btn btn-default">ВЫБРАТЬ ОБЪЕКТ</button></a>
+                    <p>Обращаем Ваше внимание на то, что большинство объектов реализуются не попадая в рекламу.<br>Их забирают инвесторы, которые оставили заявку у нас на сайте.</p>
+                </div> 
+            </div>
+        </section>
+        <section class="forma" id="Contacts">
+            <div class="container">
+                <div class="Parts">
+                    <div class="leftPart" id="leftPart">
+                        <div class="form_title">
+                            <h2>ПОЛУЧИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</h2>
+                            <p><img src="max.webp" alt="Экперт по недвижимости" class="round"></p>
+                            <h3>Максим Воронцов</h3>
+                            <p>Экперт по недвижимости</p>
+                            <div class="coc">
+                                <a class="wtf" href="https://wa.me/79994250344" target="_blank">Whatsapp</a>
+                                <a class="tg" href="https://t.me/Maksim_Vorontsov" target="_blank">Telegram</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightPart" id="rightPart">
+                        <h2>КОНТАКТЫ</h2>
+                        <div class="cont">
+                            <a href="tel:8-999-425-03-44"><p class="telef">8-999-425-03-44</p></a>
+                            <a href="mailto:vmax.8@yandex.ru" target="_blank"><p class="pochta">vmax.8@yandex.ru</p></a>
+                        </div>
+                        <div class="social">
+                            <p>Много трендов и лайфхаков <br> в наших соцсетях</p>
+                            <!-- <p>в наших соцсетях</p> -->
+                            <div class="KART">
+                                <a href="https://vk.com/vorontcov_invest" target="_blank"><img class="thirdIMG" src="vk.svg" alt="Иконка VK"/></a>
+                                <a href="https://t.me/vorontcov_invest" target="_blank"><img src="telega.svg" alt="Иконка Telegram"/></a>
+                            </div>
+                        </div>
+                    <div class="PR">
+                        <a href="Политика конфиденциальности.docx" download="" target="_blank"><p>Правила конфиденциальности</p></a>
+                        <a class="copyright" href="https://vk.com/cosmostas_69" target="_blank"><p class="copyright">© Voroncov Stanislav, 2023 - Создать сайт</p></a>
+                    </div>    
+                </div>   
+            </div>
+        </section>
+    </main>
+    <div class="popup_thx">
+        <div class="overlay_thx"></div>
+        <div class="popup_thx_body">
+            <a href="#" class="close_thx">x</a>
+            <h3>Спасибо за заявку!</h3>
+            <p>Мы перезваним Вам в течении 5 минут</p>
+            <a class="back" href="#" onclick="location.reload(); return false;">Вернуться на сайт</a>
+        </div>
+    </div>
+    <script>const typeAnimate = 'fade';</script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery.maskedinput.min.js"></script>
+    <script src="spin.js"></script>
+    <script src="forma.js"></script>
+    <script src="form.js"></script>
+    <script src="test.js"></script>
+    <script src="slider.js"></script>
+    <script>
+        $(document).ready(function () {
+          $(".accordion-title").click(function (e) {
+            var accordionitem = $(this).attr("data-tab");
+            $("#" + accordionitem)
+              .slideToggle()
+              .parent()
+              .siblings()
+              .find(".accordion-content")
+              .slideUp();
+      
+            $(this).toggleClass("active-title");
+            $("#" + accordionitem)
+              .parent()
+              .siblings()
+              .find(".accordion-title")
+              .removeClass("active-title");
+      
+            $("i.fa-chevron-down", this).toggleClass("chevron-top");
+            $("#" + accordionitem)
+              .parent()
+              .siblings()
+              .find(".accordion-title i.fa-chevron-down")
+              .removeClass("chevron-top");
+          });
+        });
+    </script>
+    <script>
+        
+        $(function(){
+            $("#telefon").mask("+7(999)-999-99-99");
+        });
+        $(function(){
+            $("#telef").mask("+7(999)-999-99-99");
+        });
+    </script>
+    <script>
+        $(".close_thx").click(function() {
+            $('.popup_thx').removeClass('active');
+        });
+    </script>
+</body>
+</html>
